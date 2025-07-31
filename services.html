@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Digizen Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6600',
+                        secondary: '#007bff',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Digizen<span class="text-secondary">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-800 hover:text-primary font-medium">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-primary font-medium">About Us</a>
+                    <a href="services.html" class="text-gray-800 hover:text-primary font-medium">Services</a>
+                    <a href="portfolio.html" class="text-gray-800 hover:text-primary font-medium">Portfolio</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-primary font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-gray-800 hover:text-primary font-medium">About Us</a>
+                <a href="services.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Services</a>
+                <a href="portfolio.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Portfolio</a>
+                <a href="contact.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our <span class="text-primary">Services</span></h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">We offer comprehensive digital solutions to help your business thrive in the online world.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Website Development</h3>
+                    <p class="text-gray-600 mb-4">Custom websites designed to convert visitors into customers with responsive layouts and intuitive user experience.</p>
+                    <a href="#web-dev" class="text-secondary hover:text-primary font-medium inline-flex items-center">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Search Engine Optimization</h3>
+                    <p class="text-gray-600 mb-4">Boost your visibility with our data-driven SEO strategies that help you rank higher and attract more organic traffic.</p>
+                    <a href="#seo" class="text-secondary hover:text-primary font-medium inline-flex items-center">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive digital marketing solutions including social media, content marketing, and paid advertising campaigns.</p>
+                    <a href="#digital-marketing" class="text-secondary hover:text-primary font-medium inline-flex items-center">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Development -->
+    <section id="web-dev" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-primary font-bold">01</span>
+                    <h2 class="text-3xl font-bold mb-6">Website Design & <span class="text-primary">Development</span></h2>
+                    <p class="text-gray-600 mb-4">We create stunning, responsive websites that not only look great but also drive conversions and business growth. Our web development process is focused on creating user-friendly experiences that engage your audience and represent your brand effectively.</p>
+                    <div class="space-y-4 mt-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Custom Website Design</h4>
+                                <p class="text-gray-600">Tailored designs that reflect your brand identity and business goals, created with your specific audience in mind.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Responsive Development</h4>
+                                <p class="text-gray-600">Mobile-friendly websites that look and function perfectly on all devices, from smartphones to desktops.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">E-commerce Solutions</h4>
+                                <p class="text-gray-600">Secure, user-friendly online stores that make it easy for customers to browse and purchase your products.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Content Management Systems</h4>
+                                <p class="text-gray-600">Easy-to-use CMS implementations that allow you to update your website content without technical knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block mt-8">Get Started</a>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/007bff/FFFFFF/png?text=Web+Development" alt="Web Development" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO -->
+    <section id="seo" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://placehold.co/600x400/007bff/FFFFFF/png?text=SEO" alt="Search Engine Optimization" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="order-1 md:order-2">
+                    <span class="text-primary font-bold">02</span>
+                    <h2 class="text-3xl font-bold mb-6">Search Engine <span class="text-primary">Optimization</span></h2>
+                    <p class="text-gray-600 mb-4">Our data-driven SEO strategies help your business rank higher in search engine results, driving more organic traffic to your website and increasing your online visibility. We focus on sustainable, white-hat techniques that deliver long-term results.</p>
+                    <div class="space-y-4 mt-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Keyword Research & Strategy</h4>
+                                <p class="text-gray-600">Comprehensive keyword analysis to identify the most valuable search terms for your business.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">On-Page SEO Optimization</h4>
+                                <p class="text-gray-600">Optimizing your website's content, structure, and HTML elements to improve search engine rankings.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Link Building</h4>
+                                <p class="text-gray-600">Strategic acquisition of high-quality backlinks to boost your website's authority and rankings.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Performance Tracking & Reporting</h4>
+                                <p class="text-gray-600">Regular analysis and reporting on your SEO performance with actionable insights for continuous improvement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block mt-8">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing -->
+    <section id="digital-marketing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-primary font-bold">03</span>
+                    <h2 class="text-3xl font-bold mb-6">Digital & Social Media <span class="text-primary">Marketing</span></h2>
+                    <p class="text-gray-600 mb-4">Our comprehensive digital marketing services help you connect with your target audience, build brand awareness, and drive conversions. We create tailored strategies that align with your business goals and deliver measurable results.</p>
+                    <div class="space-y-4 mt-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Social Media Management</h4>
+                                <p class="text-gray-600">Strategic content creation, scheduling, and community management across all major social platforms.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Pay-Per-Click Advertising</h4>
+                                <p class="text-gray-600">Targeted PPC campaigns on Google, Facebook, Instagram, and other platforms to drive qualified traffic.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Content Marketing</h4>
+                                <p class="text-gray-600">Engaging, valuable content that attracts and retains your target audience while establishing your expertise.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email Marketing</h4>
+                                <p class="text-gray-600">Personalized email campaigns that nurture leads, drive conversions, and build customer loyalty.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block mt-8">Get Started</a>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/007bff/FFFFFF/png?text=Digital+Marketing" alt="Digital Marketing" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Additional <span class="text-primary">Services</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Analytics & Reporting</h3>
+                    <p class="text-gray-600">Comprehensive data analysis and reporting to track your digital performance and inform strategic decisions.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Creation</h3>
+                    <p class="text-gray-600">Professional copywriting, blog posts, articles, and multimedia content that engages your audience and drives action.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile App Development</h3>
+                    <p class="text-gray-600">Custom mobile applications for iOS and Android that extend your digital presence and enhance user engagement.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">E-commerce Solutions</h3>
+                    <p class="text-gray-600">Comprehensive online store development with secure payment processing, inventory management, and user-friendly interfaces.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Identity Design</h3>
+                    <p class="text-gray-600">Logo design, brand guidelines, and visual identity development that communicates your brand's unique value proposition.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Hosting & Maintenance</h3>
+                    <p class="text-gray-600">Reliable hosting solutions and ongoing website maintenance to ensure optimal performance and security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our <span class="text-primary">Process</span></h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 relative">
+                            <span class="text-white text-xl font-bold">1</span>
+                            <div class="hidden md:block absolute w-full h-1 bg-primary right-0 top-1/2 -z-10 translate-x-1/2"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Discovery</h3>
+                        <p class="text-gray-600">We learn about your business, goals, and target audience to create a tailored strategy.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 relative">
+                            <span class="text-white text-xl font-bold">2</span>
+                            <div class="hidden md:block absolute w-full h-1 bg-primary right-0 top-1/2 -z-10 translate-x-1/2"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Strategy</h3>
+                        <p class="text-gray-600">We develop a comprehensive plan aligned with your business objectives and budget.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 relative">
+                            <span class="text-white text-xl font-bold">3</span>
+                            <div class="hidden md:block absolute w-full h-1 bg-primary right-0 top-1/2 -z-10 translate-x-1/2"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Implementation</h3>
+                        <p class="text-gray-600">Our team executes the strategy with precision, keeping you informed throughout the process.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="text-center">
+                        <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-xl font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Optimization</h3>
+                        <p class="text-gray-600">We continuously monitor, analyze, and refine our approach to maximize your results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Grow Your Business?</h2>
+            <p class="text-white/80 mb-8 max-w-3xl mx-auto">Contact us today to discuss how our services can help you achieve your business goals.</p>
+            <a href="contact.html" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">Digizen<span class="text-primary">Solutions</span></h3>
+                    <p class="text-gray-400 mb-4">Transforming businesses through innovative digital solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-primary transition duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#web-dev" class="text-gray-400 hover:text-primary transition duration-300">Website Development</a></li>
+                        <li><a href="#seo" class="text-gray-400 hover:text-primary transition duration-300">Search Engine Optimization</a></li>
+                        <li><a href="#digital-marketing" class="text-gray-400 hover:text-primary transition duration-300">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Content Creation</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span class="text-gray-400">123 Business Avenue, Digital City, 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span class="text-gray-400">info@digizensolutions.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 Digizen Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

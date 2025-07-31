@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digizen Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6600',
+                        secondary: '#007bff',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Digizen<span class="text-secondary">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-800 hover:text-primary font-medium">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-primary font-medium">About Us</a>
+                    <a href="services.html" class="text-gray-800 hover:text-primary font-medium">Services</a>
+                    <a href="portfolio.html" class="text-gray-800 hover:text-primary font-medium">Portfolio</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-primary font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-gray-800 hover:text-primary font-medium">About Us</a>
+                <a href="services.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Services</a>
+                <a href="portfolio.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Portfolio</a>
+                <a href="contact.html" class="block py-2 text-gray-800 hover:text-primary font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About <span class="text-primary">Us</span></h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Learn more about our company, our mission, and the team behind Digizen Solutions.</p>
+        </div>
+    </section>
+
+    <!-- Company Intro -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/007bff/FFFFFF/png?text=Our+Story" alt="Company Story" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Who We <span class="text-primary">Are</span></h2>
+                    <p class="text-gray-600 mb-4">Digizen Solutions is a forward-thinking digital agency founded in 2015. We specialize in creating innovative digital solutions that help businesses thrive in the ever-evolving online landscape.</p>
+                    <p class="text-gray-600 mb-6">With a team of experienced professionals, we combine creativity with technical expertise to deliver exceptional results for our clients across various industries.</p>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bullseye text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Our Mission</h3>
+                            <p class="text-gray-600">To empower businesses with cutting-edge digital solutions that drive growth and success.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-eye text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Our Vision</h3>
+                            <p class="text-gray-600">To be the leading digital agency known for innovation, excellence, and transformative results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our <span class="text-primary">Values</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovation</h3>
+                    <p class="text-gray-600">We constantly explore new ideas and technologies to provide cutting-edge solutions that keep our clients ahead of the competition.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Integrity</h3>
+                    <p class="text-gray-600">We operate with honesty, transparency, and ethical practices in all our client relationships and business operations.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Excellence</h3>
+                    <p class="text-gray-600">We are committed to delivering the highest quality work and exceeding client expectations in every project we undertake.</p>
+                </div>
+                <!-- Value 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Collaboration</h3>
+                    <p class="text-gray-600">We believe in the power of teamwork and partnership, working closely with our clients to achieve shared goals.</p>
+                </div>
+                <!-- Value 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-rocket text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Adaptability</h3>
+                    <p class="text-gray-600">We embrace change and continuously evolve our strategies to stay relevant in the fast-paced digital landscape.</p>
+                </div>
+                <!-- Value 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Client-Centric</h3>
+                    <p class="text-gray-600">We put our clients at the center of everything we do, focusing on their unique needs and long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our <span class="text-primary">Story</span></h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200"></div>
+                    
+                    <!-- 2015 -->
+                    <div class="relative z-10 mb-12">
+                        <div class="flex items-center">
+                            <div class="flex-1 text-right pr-8 md:pr-12">
+                                <h3 class="text-xl font-bold mb-2">2015</h3>
+                                <p class="text-gray-600">Digizen Solutions was founded with a vision to help small businesses establish their online presence.</p>
+                            </div>
+                            <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center z-10">
+                                <i class="fas fa-flag text-white"></i>
+                            </div>
+                            <div class="flex-1 pl-8 md:pl-12"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2017 -->
+                    <div class="relative z-10 mb-12">
+                        <div class="flex items-center">
+                            <div class="flex-1 text-right pr-8 md:pr-12"></div>
+                            <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center z-10">
+                                <i class="fas fa-users text-white"></i>
+                            </div>
+                            <div class="flex-1 pl-8 md:pl-12">
+                                <h3 class="text-xl font-bold mb-2">2017</h3>
+                                <p class="text-gray-600">Expanded our team and services to include SEO and digital marketing solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2019 -->
+                    <div class="relative z-10 mb-12">
+                        <div class="flex items-center">
+                            <div class="flex-1 text-right pr-8 md:pr-12">
+                                <h3 class="text-xl font-bold mb-2">2019</h3>
+                                <p class="text-gray-600">Opened our second office and began serving clients internationally.</p>
+                            </div>
+                            <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center z-10">
+                                <i class="fas fa-globe text-white"></i>
+                            </div>
+                            <div class="flex-1 pl-8 md:pl-12"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2021 -->
+                    <div class="relative z-10 mb-12">
+                        <div class="flex items-center">
+                            <div class="flex-1 text-right pr-8 md:pr-12"></div>
+                            <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center z-10">
+                                <i class="fas fa-award text-white"></i>
+                            </div>
+                            <div class="flex-1 pl-8 md:pl-12">
+                                <h3 class="text-xl font-bold mb-2">2021</h3>
+                                <p class="text-gray-600">Recognized as one of the top digital agencies in the region with multiple industry awards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2023 -->
+                    <div class="relative z-10">
+                        <div class="flex items-center">
+                            <div class="flex-1 text-right pr-8 md:pr-12">
+                                <h3 class="text-xl font-bold mb-2">2023</h3>
+                                <p class="text-gray-600">Continuing to innovate and grow, with a focus on emerging technologies and sustainable digital solutions.</p>
+                            </div>
+                            <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center z-10">
+                                <i class="fas fa-rocket text-white"></i>
+                            </div>
+                            <div class="flex-1 pl-8 md:pl-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Meet Our <span class="text-primary">Team</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://placehold.co/400x500/007bff/FFFFFF/png?text=CEO" alt="Team Member" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold mb-1">Alex Johnson</h3>
+                        <p class="text-primary font-medium mb-2">CEO & Founder</p>
+                        <p class="text-gray-600 text-sm">Visionary leader with 15+ years of experience in digital innovation.</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://placehold.co/400x500/007bff/FFFFFF/png?text=CTO" alt="Team Member" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold mb-1">Sarah Chen</h3>
+                        <p class="text-primary font-medium mb-2">CTO</p>
+                        <p class="text-gray-600 text-sm">Tech expert specializing in innovative web solutions and emerging technologies.</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://placehold.co/400x500/007bff/FFFFFF/png?text=CMO" alt="Team Member" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold mb-1">Michael Rodriguez</h3>
+                        <p class="text-primary font-medium mb-2">Marketing Director</p>
+                        <p class="text-gray-600 text-sm">Strategic marketer with a passion for creating impactful digital campaigns.</p>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://placehold.co/400x500/007bff/FFFFFF/png?text=Lead" alt="Team Member" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold mb-1">Emily Wilson</h3>
+                        <p class="text-primary font-medium mb-2">Lead Designer</p>
+                        <p class="text-gray-600 text-sm">Creative designer known for crafting beautiful and functional user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Transform Your Digital Presence?</h2>
+            <p class="text-white/80 mb-8 max-w-3xl mx-auto">Partner with us to take your business to the next level with our innovative digital solutions.</p>
+            <a href="contact.html" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">Digizen<span class="text-primary">Solutions</span></h3>
+                    <p class="text-gray-400 mb-4">Transforming businesses through innovative digital solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-primary transition duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Website Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Search Engine Optimization</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Content Creation</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span class="text-gray-400">123 Business Avenue, Digital City, 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span class="text-gray-400">info@digizensolutions.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 Digizen Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
