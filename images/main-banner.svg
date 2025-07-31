@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007bff" />
+      <stop offset="100%" stop-color="#0056b3" />
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0f0f0" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000033" />
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)" rx="10" ry="10" />
+  
+  <!-- Decorative elements -->
+  <circle cx="500" cy="80" r="60" fill="#ff6600" opacity="0.2" />
+  <circle cx="100" cy="320" r="80" fill="#ff6600" opacity="0.2" />
+  
+  <!-- Abstract digital elements -->
+  <g opacity="0.15" fill="#ffffff">
+    <rect x="50" y="50" width="20" height="20" rx="2" />
+    <rect x="80" y="50" width="20" height="20" rx="2" />
+    <rect x="110" y="50" width="20" height="20" rx="2" />
+    <rect x="50" y="80" width="20" height="20" rx="2" />
+    <rect x="80" y="80" width="20" height="20" rx="2" />
+    <rect x="110" y="80" width="20" height="20" rx="2" />
+    
+    <rect x="450" y="300" width="20" height="20" rx="2" />
+    <rect x="480" y="300" width="20" height="20" rx="2" />
+    <rect x="510" y="300" width="20" height="20" rx="2" />
+    <rect x="450" y="330" width="20" height="20" rx="2" />
+    <rect x="480" y="330" width="20" height="20" rx="2" />
+    <rect x="510" y="330" width="20" height="20" rx="2" />
+  </g>
+  
+  <!-- Connected lines representing digital network -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.2">
+    <line x1="150" y1="100" x2="250" y2="150" />
+    <line x1="250" y1="150" x2="350" y2="100" />
+    <line x1="350" y1="100" x2="450" y2="150" />
+    <line x1="150" y1="250" x2="250" y2="200" />
+    <line x1="250" y1="200" x2="350" y2="250" />
+    <line x1="350" y1="250" x2="450" y2="200" />
+    <line x1="250" y1="150" x2="250" y2="200" />
+    <line x1="350" y1="100" x2="350" y2="250" />
+  </g>
+  
+  <!-- Main text -->
+  <text x="300" y="180" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="url(#text-gradient)" filter="url(#shadow)">Digizen Solutions</text>
+  
+  <!-- Tagline -->
+  <text x="300" y="220" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff" opacity="0.9">Transform Your Digital Presence</text>
+</svg>

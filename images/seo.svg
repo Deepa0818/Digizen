@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6600" />
+      <stop offset="100%" stop-color="#cc5200" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)" rx="10" ry="10" />
+  
+  <!-- Decorative elements -->
+  <circle cx="500" cy="80" r="60" fill="#007bff" opacity="0.2" />
+  <circle cx="100" cy="320" r="80" fill="#007bff" opacity="0.2" />
+  
+  <!-- SEO Visualization -->
+  <g transform="translate(300, 200)">
+    <!-- Search bar -->
+    <rect x="-150" y="-80" width="300" height="40" rx="20" fill="#ffffff" />
+    <circle cx="-130" cy="-60" r="15" stroke="#aaaaaa" stroke-width="2" fill="none" />
+    <line x1="-120" y1="-50" x2="-110" y2="-40" stroke="#aaaaaa" stroke-width="2" />
+    <text x="-90" y="-55" font-family="Arial, sans-serif" font-size="16" fill="#aaaaaa">Search keywords...</text>
+    
+    <!-- Rankings visualization -->
+    <g transform="translate(0, 20)">
+      <!-- Rank 1 -->
+      <rect x="-140" y="-10" width="280" height="30" rx="5" fill="#ffffff" opacity="0.9" />
+      <text x="-130" y="10" font-family="Arial, sans-serif" font-size="14" fill="#333333">1. Digizen Solutions - Digital Agency</text>
+      <rect x="-140" y="-10" width="5" height="30" fill="#007bff" />
+      
+      <!-- Rank 2 -->
+      <rect x="-140" y="30" width="260" height="30" rx="5" fill="#ffffff" opacity="0.7" />
+      <text x="-130" y="50" font-family="Arial, sans-serif" font-size="14" fill="#333333">2. Digital Marketing Services</text>
+      <rect x="-140" y="30" width="5" height="30" fill="#007bff" />
+      
+      <!-- Rank 3 -->
+      <rect x="-140" y="70" width="240" height="30" rx="5" fill="#ffffff" opacity="0.5" />
+      <text x="-130" y="90" font-family="Arial, sans-serif" font-size="14" fill="#333333">3. SEO Optimization Company</text>
+      <rect x="-140" y="70" width="5" height="30" fill="#007bff" />
+    </g>
+  </g>
+  
+  <!-- Main text -->
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">Search Engine Optimization</text>
+</svg>

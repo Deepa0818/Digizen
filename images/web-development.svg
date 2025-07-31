@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007bff" />
+      <stop offset="100%" stop-color="#0056b3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)" rx="10" ry="10" />
+  
+  <!-- Decorative elements -->
+  <circle cx="500" cy="80" r="60" fill="#ff6600" opacity="0.2" />
+  <circle cx="100" cy="320" r="80" fill="#ff6600" opacity="0.2" />
+  
+  <!-- Code window representation -->
+  <g transform="translate(300, 200)">
+    <!-- Window frame -->
+    <rect x="-150" y="-100" width="300" height="200" rx="5" fill="#ffffff" opacity="0.9" />
+    
+    <!-- Window header -->
+    <rect x="-150" y="-100" width="300" height="30" rx="5" fill="#e0e0e0" />
+    <circle cx="-130" cy="-85" r="5" fill="#ff6b6b" />
+    <circle cx="-110" cy="-85" r="5" fill="#feca57" />
+    <circle cx="-90" cy="-85" r="5" fill="#1dd1a1" />
+    
+    <!-- Code lines -->
+    <g fill="#333333" font-family="monospace" font-size="12">
+      <text x="-140" y="-50"><tspan fill="#ff6600">&lt;html&gt;</tspan></text>
+      <text x="-140" y="-30"><tspan fill="#007bff">  &lt;head&gt;</tspan></text>
+      <text x="-140" y="-10"><tspan fill="#007bff">    &lt;title&gt;</tspan>Website<tspan fill="#007bff">&lt;/title&gt;</tspan></text>
+      <text x="-140" y="10"><tspan fill="#007bff">  &lt;/head&gt;</tspan></text>
+      <text x="-140" y="30"><tspan fill="#007bff">  &lt;body&gt;</tspan></text>
+      <text x="-140" y="50"><tspan fill="#007bff">    &lt;h1&gt;</tspan>Hello World<tspan fill="#007bff">&lt;/h1&gt;</tspan></text>
+      <text x="-140" y="70"><tspan fill="#007bff">  &lt;/body&gt;</tspan></text>
+      <text x="-140" y="90"><tspan fill="#ff6600">&lt;/html&gt;</tspan></text>
+    </g>
+  </g>
+  
+  <!-- Main text -->
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">Web Development</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007bff" />
+      <stop offset="100%" stop-color="#0056b3" />
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0f0f0" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000033" />
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)" rx="10" ry="10" />
+  
+  <!-- Decorative elements -->
+  <circle cx="500" cy="80" r="60" fill="#ff6600" opacity="0.2" />
+  <circle cx="100" cy="320" r="80" fill="#ff6600" opacity="0.2" />
+  
+  <!-- Service icons -->
+  <g fill="#ffffff" opacity="0.8">
+    <!-- Web Development Icon -->
+    <g transform="translate(150, 200)">
+      <rect x="-30" y="-30" width="60" height="60" rx="5" fill="none" stroke="#ffffff" stroke-width="3" />
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="#ffffff">&lt;/&gt;</text>
+    </g>
+    
+    <!-- SEO Icon -->
+    <g transform="translate(300, 200)">
+      <circle cx="0" cy="0" r="30" fill="none" stroke="#ffffff" stroke-width="3" />
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">SEO</text>
+    </g>
+    
+    <!-- Marketing Icon -->
+    <g transform="translate(450, 200)">
+      <polygon points="0,-30 26,15 -26,15" fill="none" stroke="#ffffff" stroke-width="3" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" fill="#ffffff">MKT</text>
+    </g>
+  </g>
+  
+  <!-- Main text -->
+  <text x="300" y="100" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="url(#text-gradient)" filter="url(#shadow)">Our Services</text>
+  
+  <!-- Tagline -->
+  <text x="300" y="320" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff" opacity="0.9">Web Development • SEO • Digital Marketing</text>
+</svg>
