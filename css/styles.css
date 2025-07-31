@@ -1,0 +1,210 @@
+/**
+ * Digizen Solutions - Custom CSS Styles
+ * This file contains custom styles that extend Tailwind CSS
+ */
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Apply animations to elements */
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+.animate-pulse-slow {
+    animation: pulse 2s infinite;
+}
+
+/* Hover effects for cards */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Portfolio item transitions */
+.portfolio-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Testimonial slider fade effect */
+.testimonial-slide {
+    transition: opacity 0.5s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff6600;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e55c00;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom styling for form elements focus state */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.2);
+}
+
+/* Custom styling for buttons */
+.btn-primary {
+    background-color: #ff6600;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e55c00;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0069d9;
+}
+
+/* Custom styling for section transitions */
+section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Custom styling for the mobile menu transition */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu.hidden {
+    max-height: 0;
+}
+
+#mobile-menu:not(.hidden) {
+    max-height: 300px; /* Adjust based on your menu height */
+}
+
+/* Custom styling for the hero section */
+.hero-gradient {
+    background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+}
+
+/* Custom styling for the testimonial section */
+.testimonial-gradient {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+}
+
+/* Custom styling for the CTA section */
+.cta-gradient {
+    background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+}
+
+/* Custom styling for the footer */
+.footer-gradient {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Utility classes for text gradients */
+.text-gradient-primary {
+    background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.text-gradient-secondary {
+    background: linear-gradient(135deg, #007bff 0%, #0099ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Custom styling for the FAQ accordion */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-content:not(.hidden) {
+    max-height: 500px; /* Adjust based on your content */
+}
+
+/* Custom styling for the portfolio filter buttons */
+.portfolio-filter button {
+    transition: all 0.3s ease;
+}
+
+/* Custom styling for the portfolio items */
+.portfolio-item img {
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
